@@ -15,7 +15,7 @@ Use [Cmake](https://cmake.org/download/)>3.5 to create lib files.
 
 ## How to use:
 
-Include **"GameObject.h"**. Add all file in **include** directory to your project. Link your **lib** file.
+Include **"GameObject.h"**. Add all files from **include** directory to your project. Link your **lib** file.
 
 ## Example:
 
