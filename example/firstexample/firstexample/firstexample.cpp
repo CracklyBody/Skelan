@@ -67,7 +67,6 @@ int main()
         anim->setMat4("model", trans);
         object->render(anim);
 
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         glfwPollEvents();
         glfwSwapBuffers(window);
         if (GLFW_PRESS == glfwGetKey(window, GLFW_KEY_ESCAPE))
