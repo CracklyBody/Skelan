@@ -263,7 +263,7 @@ unsigned int ModelLoader::textureFromFile(const char* path)
 
     unsigned int textureID;
     glGenTextures(1, &textureID); //gen texture, opengl function
-    glBindTexture(GL_TEXTURE_2D, textureID); //bind the texture
+    //glBindTexture(GL_TEXTURE_2D, textureID); //bind the texture
 
     int W, H, comp; //width and height
     unsigned char* image = stbi_load(filename.c_str(), &W, &H, &comp, 4);
@@ -271,8 +271,17 @@ unsigned int ModelLoader::textureFromFile(const char* path)
 
     if (image) //if the image is fine
     {
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, W, H, 0, GL_RGBA, GL_UNSIGNED_BYTE, image); //fill the texture with image data
-        glGenerateMipmap(GL_TEXTURE_2D); //generate mipmaps 
+        GLenum format;
+        if (comp == 1)
+            format = GL_RED;
+        else if (comp == 3)
+            format = GL_RGB;
+        else if (comp == 4)
+            format = GL_RGBA;
+
+        glBindTexture(GL_TEXTURE_2D, textureID);
+        glTexImage2D(GL_TEXTURE_2D, 0, format, W, H, 0, format, GL_UNSIGNED_BYTE, image);//fill the texture with image data
+        glGenerateMipmap(GL_TEXTURE_2D);//generate mipmaps 
 
 
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);

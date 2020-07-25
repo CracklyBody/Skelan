@@ -30,7 +30,7 @@ void SMesh::setupSMesh()
 	glEnableVertexAttribArray(1);
 
 	glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, sizeof(smesh::Vertex), (void*)offsetof(smesh::Vertex,texCoords));
-	glEnableVertexAttribArray(0);
+	glEnableVertexAttribArray(2);
 
 	for (int i = 0; i < BONES_AMOUNT; i++)
 	{
@@ -66,7 +66,7 @@ void SMesh::draw(ShaderLoader* ShaderLoader)
 			number = std::to_string(specularNR);
 			specularNR++;
 		}
-		glUniform1i(glGetUniformLocation(ShaderLoader->ID, ("material." + textures[i].type + number).c_str()), i);
+		glUniform1f(glGetUniformLocation(ShaderLoader->ID, ("material." + textures[i].type).c_str()), i);
 		glBindTexture(GL_TEXTURE_2D, textures[i].id);
 	}
 	glBindVertexArray(VAO);
