@@ -1,22 +1,43 @@
-# Skelan
+<p align="center">
+  <img src="path_to_your_logo_or_image.png" alt="Skelan Logo" width="200"/>
+  <h1 align="center">Skelan</h1>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/build-passing-brightgreen" alt="Build Status">
+  <img src="https://img.shields.io/github/stars/your_github_username/your_repository_name" alt="GitHub Stars">
+  <img src="https://img.shields.io/github/forks/your_github_username/your_repository_name" alt="GitHub Forks">
+  <!-- Добавьте другие значки по желанию -->
+</p>
+
 Skeletal animation in a clean and unified structure for easy use.
 
-Using libraries:
+## 📦 Dependencies
 
-+ [assimp](https://github.com/assimp/assimp)
+- [assimp](https://github.com/assimp/assimp)
+- [glm](https://glm.g-truc.net/0.9.9/index.html)
+- [glfw](https://www.glfw.org/)
 
-+ [glm](https://glm.g-truc.net/0.9.9/index.html)
+## 🛠 Building
 
-+ [glfw](https://www.glfw.org/)
+Use [Cmake](https://cmake.org/download/) >3.5 to create lib files.
 
-## Building:
+## 🚀 Usage
 
-Use [Cmake](https://cmake.org/download/)>3.5 to create lib files.
+1. Include **"GameObject.h"**.
+2. Add all files from **include** directory to your project.
+3. Link your **lib** file.
 
-## How to use:
+## 🎥 Demo
 
-Include **"GameObject.h"**. Add all files from **include** directory to your project. Link your **lib** file.
+<p align="center">
+  <img src="https://media.giphy.com/media/SYvUAr66dVr1SHAVAP/giphy.gif" alt="Skelan Demo">
+</p>
 
-## Example:
+## 📜 License
 
-![Alt Text](https://media.giphy.com/media/SYvUAr66dVr1SHAVAP/giphy.gif)
+<!-- Если у вас есть лицензия, укажите это здесь -->
+
+---
+
+⭐ If you like this project, please give it a star! Feedback is always welcome.
