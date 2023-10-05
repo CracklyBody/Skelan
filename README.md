@@ -5,8 +5,8 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/build-passing-brightgreen" alt="Build Status">
-  <img src="https://img.shields.io/github/stars/your_github_username/your_repository_name" alt="GitHub Stars">
-  <img src="https://img.shields.io/github/forks/your_github_username/your_repository_name" alt="GitHub Forks">
+  <img src="https://img.shields.io/github/stars/cracklybody/skelan" alt="GitHub Stars">
+  <img src="https://img.shields.io/github/forks/cracklybody/skelan" alt="GitHub Forks">
   <!-- Добавьте другие значки по желанию -->
 </p>
 
