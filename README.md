@@ -1,4 +1,7 @@
+<p align="center">
 
+  <h1 align="center">Skelan</h1>
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/build-passing-brightgreen" alt="Build Status">
